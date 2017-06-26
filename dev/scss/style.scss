@@ -7,19 +7,18 @@
 
 body {
     margin: 0;
-    background: #1d2b41; 
+    
 }
 
-$bodyColor: #1d2b41;
-$lightBlueColor: #4e75a0;
-$darkBlueColor: #466a92;
-$blackColor: #000;
-$redColor: #da3533;
-$lightRedColor: #e63e3c;
-$darkRedColor: #cf2523;
-$greenColor: #829c48;
-$lightGreenColor: #8fab50;
-$darkGreenColor: #70883a;
+.wrapper{
+	max-width: 1440px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+
+$bodyColor: #fff;
 $whiteColor: #fff;
 
 
@@ -29,126 +28,7 @@ $whiteColor: #fff;
 	text-decoration: none;
 }
 
-@mixin opacity-hover(){
-	opacity: 0.7;
-}
-@mixin anons-hover{
-	background-color:#476b90;
-}
-@mixin link-news-hover{
-	background-color:#839b4d;
-}
-@mixin 	myLink(){
-	color: #fff;
-	font-family: "Myriad Pro", "Helvetica", sans-serif;
-	font-size: 14px;
-	text-decoration: underline;
-	text-transform: uppercase;
-
-}
-
-@mixin menuFont() {
-	color: #ffffff;
-	font-family: "Myriad Pro";
-	font-size: 12px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
-@mixin mainFont() {
-	color: #fff;
-	font-family: "Myriad Pro", "Helvetica", sans-serif;
-	font-size: 16px;
-	line-height: 16px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
 
 
-@mixin additionalFont() {
-	color: #000;
-	font-family: 'Trebuchet MS', sans-serif;
-	font-size: 14px;
-	line-height: 14px;
-	text-transform: none;
-	text-decoration: none;
-}
-
-@mixin rightColumn() {
-	.right-column {
-				display: block;
-				margin:0 0 30px;
-				padding-left:10px;
-				padding-bottom:10px;
-				list-style: none;
-				font-size: 0px;
-				background-color: $lightBlueColor;
-
-				& li {
-					margin-bottom: 10px;
-					@include menuFont();
-
-
-					&:last-child {
-					margin-bottom: 0;
-					}
-					
-					.info-title {
-						@include menuFont();
-						margin: 0;
-					
-
-						span {
-							display: inline-block;
-							background-color: #829c48;
-							padding:5px 10px 2px;
-							min-height:20px;
-							margin-left: -10px;
-							margin-right:10px;
-						}
-					}
-					& a:hover{
-						@include color-hover();
-					}
-					& a:nth-last-child(n+2)::after{
-						content: ' ,';
-						
-					}
-					& a:nth-last-child(1)::after{
-						content: '.';
-						
-					}
-					& a {
-						color:#ffffff;
-						text-transform: none;
-					}
-				}
-			}
-}
-
-@import 'components/main';
-@import 'components/banner';
-@import 'components/popup';
-@import 'components/publication';
-@import 'components/pagination';
 @import 'components/header';
-@import 'components/log-form';
-@import 'components/menu';
-@import 'components/form-edit';
-@import 'components/reg-form';
-@import 'components/comment-user';
-@import 'components/films-list';
-@import 'components/films-main';
-@import 'components/form-contact';
-@import 'components/main-news-promo';
-@import 'components/main-news';
-@import 'components/news';
-@import 'components/userbanner';
-@import 'components/usersphoto';
-@import 'components/vote';
-@import 'components/personsphoto';
-@import 'components/footer';
-@import 'components/to-top';
-@import 'components/js-style';
-@import 'components/fancy';
-@import 'components/jquery.rating';
+

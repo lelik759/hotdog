@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+	min-height: 500px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 1) );
+
+}
+
+
+.gallery {
+
+    &-blockimg {
+    	margin: 0 auto;
+        font-size: 0;
+
+        &__photo {
+        	max-width: 250px;
+        	max-height: 250px;
+
+        }
+    }	
+}
