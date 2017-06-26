@@ -1,0 +1,33 @@
+{
+  "name": "films",
+  "version": "0.0.1",
+  "description": "[ТЗ](https://yadi.sk/i/QernNeIR3GBxxt)",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.0.0",
+    "gulp-font": "^1.0.4",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-html-import": "0.0.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcslayer/films.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcslayer/films/issues"
+  },
+  "homepage": "https://github.com/mcslayer/films#readme"
+}
