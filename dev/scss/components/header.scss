@@ -1,14 +1,33 @@
 .header {
+	position: relative;
     width: 100%;
 	min-height: 500px;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 1) );
+
+	&-background {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 125px;
+	    background: linear-gradient(to top, rgba(0, 0, 0, 0),  rgba(0, 0, 0, .4) );
+
+	}
+
+	&-nav {
+		width: 1440px;
+		height: 100px;
+		box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.11);
+		background-color: #fff;
+	}
 
 }
+
 
 
 .gallery {
 
     &-blockimg {
+    	width: 1440px;
     	margin: 0 auto;
         font-size: 0;
 
@@ -18,4 +37,26 @@
 
         }
     }	
+}
+
+
+.menu {
+	line-height: 100px;
+
+	&__item:hover {
+		@include opacity-hover(); 
+	}
+
+	&__item {
+		display: inline-block;
+		margin-right: 78px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 24px;
+		text-transform: uppercase;
+
+		a {
+		 color: #2e2e2e;
+		}
+	}
 }

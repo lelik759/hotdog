@@ -5,30 +5,47 @@
 
 }
 
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ margin: 0;
+ list-style-type: none;
+}
+
 body {
     margin: 0;
+    color: #555559;
+	font-family: "Open Sans", sans-serif;
     
 }
 
 .wrapper{
-	max-width: 1440px;
+	width: 1440px;
 	margin: 0 auto;
+	background-color: #fbfafa;
 	text-align: center;
 	
 }
 
 
-$bodyColor: #fff;
-$whiteColor: #fff;
 
 
 
-@mixin color-hover(){
-	color: #000;
-	text-decoration: none;
+
+@mixin opacity-hover(){
+	opacity: 0.7;
+	
 }
 
 
 
+
+
+
 @import 'components/header';
+@import 'components/main';
+@import 'components/footer';
 

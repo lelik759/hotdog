@@ -1,0 +1,124 @@
+.main-title {
+	display: inline-block;
+	max-width: 840px;
+	margin-bottom: 80px;
+	font-size: 56px;
+    font-weight: 300;
+
+    &::before {
+    	display: block;
+    	width: 93px;
+		height: 93px;
+    	content: "";
+    	margin: 115px auto 36px;
+    	background: url(../images/hotdog.png);
+    	
+    }
+}
+
+
+.btn {
+	display: block;
+	width: 310px;
+	margin: 0 auto;
+	padding: 22px 0;
+	margin-bottom: 173px;
+	border-radius: 6px;
+	background-color: #286782;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+
+	&:hover {
+		@include opacity-hover();
+	}
+}
+
+
+.main-food {
+	font-size: 0;
+
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&-description {
+		position: relative;
+		display: inline-flex;
+		max-width: 50%;
+		width: 720px;
+		height: 576px;
+		text-align: left;
+		vertical-align: top;
+		background-color: #fff;
+
+		&__title {
+			display: block;
+			margin-bottom: 33px;
+			font-size: 24px;
+			font-weight: 700;
+
+			&::before {
+				display: block;
+				position: absolute;
+				top: 22px;
+				left: -40px;
+				content: "\2014";
+				color: #84959c;
+			}
+		}
+
+
+		&__text {
+			display: inline-block;
+			margin: auto;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 24px;
+		}
+
+	}
+
+	&-img {
+		display: inline-block;
+		max-width: 720px;
+		
+	}
+}
+
+
+.description-wrapper {
+	position: relative;
+	width: 436px;
+	margin: auto;
+	
+
+}
+
+
+
+
+
+@media (max-width:720px) {
+	.main-food {
+		width: 100%;
+	
+
+		&-img {
+			width: 100%;
+			
+		}
+	
+		&-description {
+			width: 100%;
+			
+		}
+
+		&-wrapper {
+			flex-direction:column;
+		}
+
+	}	
+}
