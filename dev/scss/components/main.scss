@@ -37,11 +37,12 @@
 
 
 .main-food {
-	font-size: 0;
+	
 
 	&-wrapper {
 		display: flex;
 		flex-wrap: wrap;
+		font-size: 0;
 	}
 
 	&-description {
