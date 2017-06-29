@@ -1,6 +1,6 @@
 
 
-var menuButton=document.querySelector(".header-nav__icon");
+var menuButton=document.querySelector(".header-nav-btn");
 var buttonClose=document.querySelector(".header-nav-hidden__icon");
 var headerNavHidden=document.querySelector(".header-nav-hidden");
 

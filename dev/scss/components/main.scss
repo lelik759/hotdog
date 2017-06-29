@@ -10,7 +10,7 @@
     	width: 93px;
 		height: 93px;
     	content: "";
-    	margin: 115px auto 36px;
+    	margin: 7.98% auto 2.5%;
     	background: url(../images/hotdog.png);
     	
     }
@@ -159,4 +159,14 @@
 		}
 	
 	}	
+}
+
+
+
+
+@media (max-width:500px) {
+
+	.main-title::before {
+				margin-top: 0;
+			}
 }
