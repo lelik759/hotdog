@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>array</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	
+	
+
+
+
+// 	<script >
+
+
+
+// 	var wordArr = ["авиСл","Апельсин","Слива","авСил","авилС ", "Ябло ко"];
+// 	var obj = {};
+// 	function findUniq(wordArr) {
+// 		for (var i = 0; i < wordArr.length; i++) {
+// 			var sorted = wordArr[i].split('').sort().join('');
+// 			if(sorted[0]!=0) {
+// 				obj[sorted] = wordArr[i];
+			
+					
+// 			}
+
+// 				var nonSpace = [];
+// 					for (var key in obj) nonSpace.push(obj[key]) ;	
+
+				
+// 		}
+	
+// 			console.log(obj);	
+// 	}
+
+// findUniq(wordArr);
+
+
+
+
+
+// 	</script>
+
+
+	<script >
+
+
+
+	var wordArr = ["авиСл","Слива","Апельсин","авСил","авилС ","Ябло ко"];
+	var obj = {};
+	function findUniq(wordArr) {
+		for (var i = 0; i < wordArr.length; i++) {
+		 	var firstLetter=wordArr[i].split('').sort().join('');
+		 	if(firstLetter[0]!=0) {
+		 		do {
+		 			i++;
+		 			console.log(wordArr[--i]);
+		 		} while (wordArr[i].split('').sort().join('')== wordArr[i+1].split('').sort().join('')) 
+				
+				
+				
+
+			}	
+
+
+				
+		}
+		
+	}
+
+findUniq(wordArr);
+
+
+
+
+
+	</script>
+	
+
+
+	
+	
+</body>
+</html>
+
